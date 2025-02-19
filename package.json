@@ -1,6 +1,6 @@
 {
   "name": "@nikolayemrikh/rpc-ts-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "RPC TypeScript client for frontend applications",
   "type": "module",
   "files": [
