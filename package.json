@@ -1,0 +1,50 @@
+{
+  "name": "@nikolayemrikh/rpc-ts-client",
+  "version": "1.0.0",
+  "description": "RPC TypeScript client for frontend applications",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/rpc-ts-client.umd.js",
+  "module": "./dist/rpc-ts-client.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/rpc-ts-client.js",
+      "require": "./dist/rpc-ts-client.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolayemrikh/rpc-ts-client.git"
+  },
+  "keywords": [
+    "rpc",
+    "typescript",
+    "client",
+    "frontend"
+  ],
+  "author": "nikolayemrikh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolayemrikh/rpc-ts-client/issues"
+  },
+  "homepage": "https://github.com/nikolayemrikh/rpc-ts-client#readme",
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.1",
+    "vite-plugin-dts": "^4.5.0"
+  },
+  "peerDependencies": {
+    "typescript": "5.7.3"
+  }
+}
